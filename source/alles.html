@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jungle personages</title>
+	<style type="text/css">
+		p {
+			font-size: 12pt;
+		}
+	</style>
+</head>
+<body>
+	<h1>Alle vragen</h1>
+	<table id="questions" style="width:100%">
+	  <tr>
+	    <th>Vraag nummer</th>
+	    <th>Vraag</th>
+		<th>Vraag Nummer JA</th>
+		<th>Vraag Nummer NEE</th>
+		<th>Personage Nummer JA</th>
+		<th>Personage Nummer NEE</th>	
+	  </tr>
+	</table>
+	
+
+	<h1>Alle personages<h1>
+	<table id="characters" style="width:100%">
+	  <tr>
+	    <th>Personage nummer</th>
+	    <th>Afbeelding</th>
+	    <th>Naam</th>
+		<th>Tekst</th>
+		<th>Eigenschappen</th>	
+	  </tr>
+	</table>
+
+	<div id="characters">
+
+	</div>
+	<script src="scripts/jquery.3.6.0.min.js"></script>
+	<script src="scripts/dataLayer.js"></script>
+	<script src="scripts/models.js"></script>
+
+	<script type="text/javascript">
+
+		
+		/*
+		* Logic
+		* -----------------------
+		*/
+
+		// init base data
+		var dataLayer = new DataInterprenter("data/data.json");
+		dataLayer.loadData();
+		var jg = new JungleGame($( "#card-content" ), dataLayer.parseQuestions(), dataLayer.parseCharacters("assets/images/characters/"));
+		// render html
+		// foreach question
+		let html ="<tr><th>Vraag nummer</th><th>Vraag</th><th>Vraag Nummer JA</th><th>Vraag Nummer NEE</th><th>Personage Nummer JA</th><th>Personage Nummer NEE</th></tr>"
+		for (var [key, questionsInMap] of jg.questions) {
+			html += "<tr><td>" + questionsInMap.id;
+			html += "</td><td>" + questionsInMap.description;
+			if(questionsInMap.nextNoQuestionID){
+				html += "</td><td>" + questionsInMap.nextYesQuestionID;
+				html += "</td><td>" + questionsInMap.nextNoQuestionID;
+				html += "</td><td>";
+				html += "</td><td>";
+			}
+			else{
+				html += "</td><td>";
+				html += "</td><td>";
+				html += "</td><td>" + questionsInMap.characterYesID;
+				html += "</td><td>" + questionsInMap.characterNoID;
+			}
+			html += "</td></tr>";
+		}
+		$( "#questions" ).html(html);
+		// foreach character
+		html = "<tr><th>Personage nummer</th><th>afbeelding</th><th>Naam</th><th>Tekst</th><th>Eigenschappen</th></tr>";
+
+		for (var [key, characterInMap] of jg.characters) {
+			html += "<tr><td>" + key;
+			html += "</td><td><img id='img-character' style='width:100%' src='" + characterInMap.imageLocation +  "' alt='" + characterInMap.name + "'>";
+			html += "</td><td><p>" + characterInMap.name;
+			html += "<p></td><td>" + characterInMap.description;
+			html += "<p></td><td>";
+			html += "</td></tr>";
+		}
+		$( "#characters" ).html(html);
+
+		
+
+
+	</script>
+</body>
+</html>

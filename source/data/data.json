@@ -1,0 +1,508 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Probeer je graag iets nieuws uit?",
+            "nextYes": 3,
+            "nextNo": 2  
+        },
+        {
+            "id": 2,
+            "question": "Ben je een dagdromer?",
+            "nextYes": 5,
+            "nextNo": 6 
+        },
+        {
+            "id": 3,
+            "question": "Durf je afwijken van je pad?",
+            "nextYes": 4,
+            "nextNo": 6   
+        },
+        {
+            "id": 4,
+            "question": "Ga je graag op avontuur?",
+            "nextYes": 8,
+            "nextNo": 7   
+        },
+        {
+            "id": 5,
+            "question": "Stel je snel dingen uit?",
+            "nextYes": 14,
+            "nextNo": 9
+        },
+        {
+            "id": 6,
+            "question": "Neem je anderen graag op sleeptouw?",
+            "nextYes": 7,
+            "nextNo":  14  
+        },
+        {
+            "id": 7,
+            "question": "Lig je &#39;s nachts vaak te piekeren?",
+            "nextYes": 17,
+            "nextNo": 15  
+        },
+        {
+            "id": 8,
+            "question": "Voel je je overal snel op je gemak?",
+            "nextYes": 19,
+            "nextNo": 17   
+        },
+        {
+            "id": 9,
+            "question": "Vertel je aan anderen graag wat je weet?",
+            "nextYes": 12,
+            "nextNo": 10  
+        },
+        {
+            "id": 10,
+            "question": "Denk je na over de gevolgen van wat je doet?",
+            "nextYes": 11,
+            "nextNo": 13 
+        },
+        {
+            "id": 11,
+            "question": "Ben je streng maar rechtvaardig?",
+            "nextYes": 39,
+            "nextNo": 40  
+        },
+        {
+            "id": 12,
+            "question": "Word je woest als iemand je onrecht aan doet?",
+            "nextYes": 11,
+            "nextNo": 37  
+        },
+        {
+            "id": 13,
+            "question": "Ben je waakzaam en hou je alles in het vizier?",
+            "nextYes": 40,
+            "nextNo": 41  
+        },
+        {
+            "id": 14,
+            "question": "Ben je meestal te laat met deadlines?",
+            "nextYes": 15,
+            "nextNo": 12
+        },
+        {
+            "id": 15,
+            "question": "Ben je ongeduldig?",
+            "nextYes": 16,
+            "nextNo": 37  
+        },
+        {
+            "id": 16,
+            "question": "In een discussie zijn de gevoeligheden van anderen belangrijker dan je gelijk halen?",
+            "nextYes": 34,
+            "nextNo": 36   
+        },
+        {
+            "id": 17,
+            "question": "Ben je bezig met hoe anderen zich voelen?",
+            "nextYes": 18,
+            "nextNo": 16   
+        },
+        {
+            "id": 18,
+            "question": "Vind je het belangrijk dat zaken in orde zijn?",
+            "nextYes": 30,
+            "nextNo": 34  
+        },
+        {
+            "id": 19,
+            "question": "Durf je 's nachts te gaan kijken als je geluid hoort?",
+            "nextYes": 18,
+            "nextNo": 20   
+        },
+        {
+            "id": 20,
+            "question": "Heb je schrik om iets te missen?",
+            "nextYes": 21,
+            "nextNo": 30  
+        },
+        {
+            "id": 21,
+            "question": "Leer je meer van anderen dan anderen van jou?",
+            "nextYes": 22,
+            "nextNo": 28  
+        },
+        {
+            "id": 22,
+            "question": "Ben je eerder een volger dan een leider?",
+            "nextYes": 23,
+            "nextNo": 26   
+        },
+        {
+            "id": 23,
+            "question": "Hou je van spanning en sensatie?",
+            "nextYes": 24,
+            "nextNo": 25   
+        },
+        {
+            "id": 24,
+            "question": "Denk je eerder tactisch na?",
+            "characterYes": 3,
+            "characterNo": 6   
+        },
+        {
+            "id": 25,
+            "question": "Handel je  vaak uit nieuwsgierigheid?",
+            "characterYes": 14,
+            "characterNo": 10   
+        },
+        {
+            "id": 26,
+            "question": "Ben je geduldig?",
+            "nextYes": 25,
+            "nextNo": 27
+        },
+        {
+            "id": 27,
+            "question": "Ben je speels?",
+            "characterYes": 1,
+            "characterNo": 16   
+        },
+        {
+            "id": 28,
+            "question": "Ben je nochalant?",
+            "nextYes": 26,
+            "nextNo": 29
+        },
+        {
+            "id": 29,
+            "question": "Neem je initiatief in sociale situaties?",
+            "nextYes": 27,
+            "nextNo": 31
+        },
+        {
+            "id": 30,
+            "question": "Sta je gekend als een echte sfeermaker?",
+            "nextYes": 28,
+            "nextNo": 32
+        },
+        {
+            "id": 31,
+            "question": "Ben je graag op pad?",
+            "characterYes": 7,
+            "characterNo": 18   
+        },
+        {
+            "id": 32,
+            "question": "Zorg je graag voor anderen?",
+            "nextYes": 29,
+            "nextNo": 33
+        },
+        {
+            "id": 33,
+            "question": "Vind je dat afspraken er zijn om nageleefd te worden?",
+            "nextYes": 31,
+            "nextNo": 55
+        },
+        {
+            "id": 34,
+            "question": "Ben je een groepsdier?",
+            "nextYes": 32,
+            "nextNo": 35
+        },
+        {
+            "id": 35,
+            "question": "Improviseer je graag?",
+            "nextYes": 33,
+            "nextNo": 54
+        },
+        {
+            "id": 36,
+            "question": "Zou je jezelf een dromer noemen?",
+            "nextYes": 35,
+            "nextNo": 38
+        },
+        {
+            "id": 37,
+            "question": "Verkies je een boek boven een krant?",
+            "nextYes": 36,
+            "nextNo": 39
+        },
+        {
+            "id": 38,
+            "question": "Voel je je snel onzeker?",
+            "nextYes": 51,
+            "nextNo": 54
+        },
+        {
+            "id": 39,
+            "question": "Ben je afwachtend?",
+            "nextYes": 38,
+            "nextNo": 50
+        },
+        {
+            "id": 40,
+            "question": "Ben je liever lui dan moe?",
+            "nextYes": 46,
+            "nextNo": 50
+        },
+        {
+            "id": 41,
+            "question": "Bekijk je op het toilet meestal je sociale media ?",
+            "nextYes": 46,
+            "nextNo": 44  
+        },
+        {
+            "id": 42,
+            "question": "Ben je een relatief rustig persoon?",
+            "nextYes": 47,
+            "nextNo": 43
+        },
+        {
+            "id": 43,
+            "question": "Werk je graag samen anderen?",
+            "characterYes": 8,
+            "characterNo": 15   
+        },
+        {
+            "id": 44,
+            "question": "Ben je eerder een leider dan een volger?",
+            "nextYes": 45,
+            "nextNo": 42  
+        },
+        {
+            "id": 45,
+            "question": "Ga je graag op onderzoek uit?",
+            "nextYes": 48,
+            "nextNo": 47
+        },
+        {
+            "id": 46,
+            "question": "Heb je altijd voor alles een oplossing?",
+            "nextYes": 49,
+            "nextNo": 45
+        },
+        {
+            "id": 47,
+            "question": "Breng je rust in de groep?",
+            "characterYes": 4,
+            "characterNo": 19   
+        },
+        {
+            "id": 48,
+            "question": "Help je anderen alleen als ze het vragen?",
+            "characterYes": 17,
+            "characterNo": 12   
+        },
+        {
+            "id": 49,
+            "question": "Kan je goed luisteren naar anderen?",
+            "nextYes": 52,
+            "nextNo": 48
+        },
+        {
+            "id": 50,
+            "question": "Ben je een bemiddelaar?",
+            "nextYes": 51,
+            "nextNo": 49
+        },
+        {
+            "id": 51,
+            "question": "Kom je snel op voor de zwakkeren in je groep?",
+            "nextYes": 53,
+            "nextNo": 52
+        },
+        {
+            "id": 52,
+            "question": "Ben je steeds van alles op de hoogte?",
+            "characterYes": 13,
+            "characterNo": 2   
+        },
+        {
+            "id": 53,
+            "question": "Ben je chaotisch? ",
+            "characterYes": 9,
+            "characterNo": 11   
+        },
+        {
+            "id": 54,
+            "question": "Geef je anderen graag complimenten?",
+            "nextYes": 55,
+            "nextNo": 53
+        },
+        {
+            "id": 55,
+            "question": "Is je bureau steeds netjes opgeruimd?",
+            "characterYes": 5,
+            "characterNo": 9   
+        }   
+    ],
+    "characters": [
+        {
+            "id": 1,
+            "name": "Baloe",
+            "description": "Baloe is Mowgli&#39;s zachte <b>vriend</b> en <b>leert hem</b> op een <b>speelse</b> manier alles over de jungle. Hij geeft graag advies en vind niets fijner dan iemand helpen. Wanneer hij niet in Mowgli zijn buurt is, is hij steeds <b>bezorgd</b>. ",
+            "hopperID": "te000383",
+            "qualities": [
+                "Speels", "Vriend", "Leermeester", "Zorgzaam", "Behulpzaam"    
+            ]
+            
+        }, 
+        {
+            "id": 2,
+            "name": "Jacala",
+            "description": "Jacala brengt zijn tijd <b>rustig</b> door in de buurt van de poel waar de dieren komen drinken. Daar <b>luistert</b> hij naar alle verhalen die in de jungle zijn gebeurd. Eén keer redde hij Mowgli van Shere Khan.",
+            "hopperID": "te000386",
+            "qualities": [
+                "Gesteld op rust", "Behulpzaam", "Luisterend oor", "Creatief", "Doorzetter" 
+            ]
+        }, 
+        {
+            "id": 3,
+            "name": "Tabaqui",
+            "description": "Tabaqui is net zoals de andere jakhalzen <b>volgzaam</b>. Hij is altijd <b>op zoek naar een kans</b> om hier en daar een hapje mee te pikken en is altijd graag bij iemand <b>in de buurt</b>.",
+            "hopperID": "te000439",
+            "qualities": [
+                "Tactisch", "Volgzaam", "Kansenzoeker", "Onoprecht", "Volgzaam", "Flexibel" 
+            ]
+        }, 
+        {
+            "id": 4,
+            "name": "Oe",
+            "description": "Oe is heel erg oud en daardoor ongelofelijk <b>wijs</b>. Vanwege haar leeftijd is ze zeer gesteld op <b>rust</b>. Ze is niet snel, maar weet wel alles over alle dieren. Zo kan ze steeds <b>doordachte</b> beslissingen maken en is ze op alles <b>voorbereid</b>.",
+            "hopperID": "te000437",
+            "qualities": [
+                "Doordacht", "Genieter", "Wijs", "Voorbereid", "Rustbrenger" 
+            ]
+        }, 
+        {
+            "id": 5,
+            "name": "Mor",
+            "description": "Mor, de pauw, <b>pronkt</b> graag met haar mooie staart. Ze staat liefst in het <b>middelpunt van de belangstelling</b>. Toch vindt ze het belangrijk om <b>samen te werken</b> en iedereen te laten doen wat hij of zij goed kan.",
+            "hopperID": "te000436",
+            "qualities": [
+                "Trots", "Sierlijk", "Ziet kwaliteiten van anderen", "Showbeest", "Geeft graag complimenten", "Ordelijk" 
+            ]
+        }, 
+        {
+            "id": 6,
+            "name": "Rikki Tikki Tavi",
+            "description": "De mangoest Rikki Tikki Tavi is <b>goede maatjes</b> met de andere dieren en is <b>overal graag bij</b>. <b>Dartel</b> rent hij van hier naar daar door de jungle, maar blijft toch steeds <b>op zijn hoede</b> voor gevaar.",
+            "hopperID": "te000390",
+            "qualities": [
+                "Vrolijk", "Snel", "Zenuwachtig", "Is graag overal bij", "Dartel" 
+            ]
+        }, 
+        {
+            "id": 7,
+            "name": "Marala",
+            "description": "Marala de flamingo staat te balanceren op één been. Ze <b>laat zich horen</b> als de andere dieren of zichzelf onrecht wordt aangedaan. Meestal is ze bij de poel te vinden, maar <b>trekt er ook graag op uit</b> met de andere flamingo&#39;s.",
+            "hopperID": "te000388",
+            "qualities": [
+                "Evenwichtig", "Flexibel", "Sociaal", "Sierlijk", "Rechtvaardigheidsgevoel", "Avontuurlijk" 
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Mang",
+            "description": "Mang de vleermuis gaat het liefst &#39;s nachts <b>op ontdekking</b> wanneer het heel rustig is in de jungle. Mang kan dan ook <b>goed voor zichzelf</b> zorgen. Wanneer ze wakker is, <b>vertelt</b> ze de andere dieren over de dingen die &#39;s nachts in de jungle gebeuren.",
+            "hopperID": "te000435",
+            "qualities": [
+                "Nachtdier", "Op ontdekking gaan", "Zelfstandig", "Verteller" 
+            ]
+        }, 
+        {
+            "id": 9,
+            "name": "Ikki",
+            "description": "Ikki het stekelvarken is een echte <b>roddelkont</b>. Hij doet dan ook niets liever dan verhalen vertellen. Omdat hij zoveel <b>weet, bemiddelt</b> hij graag bij conflicten tussen andere dieren.",
+            "hopperID": "te000433",
+            "qualities": [
+                "Chaotisch", "Verteller", "Betrokken", "Conflict oplossend", "Roddelkont", "Altijd op de hoogte"
+            ]
+        }, 
+        {
+            "id": 10,
+            "name": "Hathi",
+            "description": "Hathi heeft samen met de andere olifanten de <b>leiding</b> in de jungle. Ze <b>beschermen</b> de wetten van de jungle en hebben <b>geen vijanden</b>. Hathi&#39;s voorvaderen begrepen dat <b>samenwerking</b> de groep sterker maakt en brachten zo vrede in de jungle.",
+            "hopperID": "te000385",
+            "qualities": [
+                "Groepsdier", "Beschermend", "Geduldig", "Dapper", "Rechtvaardig"
+            ]
+        }, 
+        {
+            "id": 11,
+            "name": "Vader wolf",
+            "description": "Wanneer Vader Wolf <b>vertelt</b>, wil je daar geen woord van missen. Streng maar rechtvaardig <b>voedt</b> hij Mowgli <b>op</b> in zijn nest als een van zijn eigen welpen. Hij beschermt hem ook tegen Shere Khan en tegen de gevaren van de jungle.",
+            "hopperID": "te000440",
+            "qualities": [
+                "Toezicht", "Rechtvaardig", "Wijs", "Verantwoordelijk"
+            ]
+        }, 
+        {
+            "id": 12,
+            "name": "Bagheera",
+            "description": "Als je iets niet <b>weet</b>, moet je bij Bagheera zijn. Hij weet als geen andere hoe de jungle in elkaar zit en <b>deelt</b> dit graag met Mowgli en Shanti. Hij beschermt hen tegen Shere Khan. Deze panter beweegt zich behendig door de jungle en houdt de horde goed in de gaten.",
+            "hopperID": "te000382",
+            "qualities": [
+                "Intelligent", "Moedig", "Behendig", "Leermeester", "Mensenkennis", "Zorgzaam"
+            ]
+        }, 
+        {
+            "id": 13,
+            "name": "Chill",
+            "description": "Vanuit de lucht ziet Chill alles. Hij weet dus als geen ander wat er zich afspeelt in de jungle. Met zijn <b>scherpe blik</b> houdt hij alles nauwlettend in de gaten. Deze <b>zelfzekere</b> wouw laat zich niet snel van zijn stuk brengen.",
+            "hopperID": "te000384",
+            "qualities": [
+                "Ogen en oren van de groep", "Zelfzeker", "Overzicht bewaren", "Hooghartig"
+            ]
+        }, 
+        {
+            "id": 14,
+            "name": "Broer wolf",
+            "description": "Deze <b>nieuwsgierige</b> jonge wolf is het <b>speelkameraadje</b> van Mowgli. De andere wolven kunnen <b>bij hem terecht</b> met hun grote en kleine verhalen. Anderen zien in hem een goede <b>leider</b>.",
+            "hopperID": "te000432",
+            "qualities": [
+                "Nieuwsgierig", "Leergierig", "Sociaal", "Betrouwbaar"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Malchi",
+            "description": "De meerval Malchi voelt zich als een vis in het water en <b>laat zich niet gemakkelijk vangen</b>. Als hij <b>muziek</b> begint te maken, luisteren alle andere vissen naar hem. Door goed te <b>kijken en te luisteren</b> vangt hij heel wat verhalen op. ",
+            "hopperID": "te000434",
+            "qualities": [
+                "Muzikaal", "Behoedzaam", "Leergierig", "Raadgever"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Raksha",
+            "description": "Raksha <b>zorgt</b> goed voor alle kleine welpen. Ze heeft steeds <b>aan alles gedacht</b> en zorgt dat het nest niets te kort komt. De welpen vertoeven graag in haar <b>warme nest</b>.",
+            "hopperID": "te000389",
+            "qualities": [
+                "Moederfiguur", "Zorgzaam", "Organisator", "Leidster"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Kaa",
+            "description": "Kaa voelt zich op haar gemak in <b>kleine groepen</b>. Bij een beslissing neemt ze eerst alles goed <b>in overweging</b> en gaat dan <b>recht op haar doel af</b>. De apen in jungle zijn doodsbang voor de slang en kon Mowgli uit hun handen redden.",
+            "hopperID": "te000387",
+            "qualities": [
+                "Houd van kleine groepen", "Zeker", "Doelgericht", "Onderzoeker", "Behulpzaam", "Sluw"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Akela",
+            "description": "Akela is de <b>leider</b> van de wolven. Vanop de raadsrots <b>waakt</b> hij over de horde en houdt in de gaten of de wetten van de jungle worden nageleefd. Hij vertelt de jonge wolven graag over wat er in de jungle gebeurt. Hij is <b>streng maar rechtvaardig</b>.",
+            "hopperID": "e000381",
+            "qualities": [
+                "leider", "Verteller", "Trouw", "Streng", "Waakzaam", "Correct"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Shere Khan",
+            "description": "Shere Khan <b>daagt</b> graag de andere dieren <b>uit</b>. Hij is <b>sluw</b> en <b>wacht</b> het juiste moment <b>af</b>, voordat hij op zijn doel afgaat. Hij is een <b>doorzetter</b> en altijd op zoek naar kans om Mowgli te pakken.",
+            "hopperID": "te000438",
+            "qualities": [
+                "Sluw", "Afwachtend", "Uitdagend", "Dominant", "Doorzetter", "Sluw"
+            ]
+        }
+    ]
+}

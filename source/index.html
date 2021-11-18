@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jungle personages</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P0F8H9GFSN"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-P0F8H9GFSN');
+	</script>
+
+	
+</head>
+<body>
+	<header>
+        <img src="./assets/images/style/ribbon.svg">
+    </header>
+	
+	<div class="card-holder">
+		<div id="card"> <!-- kaart waar alle info op verschijnd -->
+			<div class="card-content-holder">
+				<div id="card-content" class="text-center"> <!-- de inhoud van de kaart -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p class="copy">&copy; 2021 Scouts en Gidsen Vlaanderen vzw &reg;</p>
+        <img src="./assets/images/style/ribbon.svg">
+    </footer>
+	<script src="scripts/jquery.3.6.0.min.js"></script>
+	<script src="scripts/dataLayer.js"></script>
+	<script src="scripts/models.js"></script>
+
+	<script type="text/javascript">
+		/*
+		* Functions
+		* -----------------------
+		*/ 
+		function renderWelkom(){
+			jg.frame.html("<h1>Welk junglepersonage ben jij?</h1><p>Antwoord op de volgende vragen met Ja of Nee en ontdek welk personage bij jou past!</p> <div id='btn-start' class='btn'> Start</div> <a id='btn-all' class='btn' href='personages.html'>Alle personages</a></div>" );
+			//bind events
+			$( "#btn-start" ).bind( "click", firstQuestion);
+		}
+
+		function firstQuestion() {
+			showQuestion(jg.questions.get(1));
+		}
+
+		function showQuestion(currentQuestion) {
+			jg.frame.html("<h1 id='question'>" + currentQuestion.description + "</h1><div id='btn-yes' class='btn'>Ja</div><div id='btn-no' class='btn'>Nee</div>" + renderProgressBar(currentQuestion) + "<div id='btn-reset' class='btn'>Herstart</div>");
+
+			// bind events on buttons
+			$( "#btn-yes" ).bind( "click", function(){
+				if (currentQuestion.nextYesQuestionID != undefined){
+					showQuestion(jg.questions.get(currentQuestion.nextYesQuestionID));
+				}
+				else if (currentQuestion.characterYesID != undefined){
+					showcharacter(jg.characters.get(currentQuestion.characterYesID));
+				}
+			});
+
+			$( "#btn-no" ).bind( "click", function(){
+				if (currentQuestion.nextNoQuestionID != undefined){
+					showQuestion(jg.questions.get(currentQuestion.nextNoQuestionID));
+				}
+				else if (currentQuestion.characterNoID != undefined){
+					//normalsituation
+					showcharacter(jg.characters.get(currentQuestion.characterNoID));
+				}
+			});
+
+			$( "#btn-reset" ).bind( "click", function(){
+				renderWelkom();
+			});
+		}
+
+		function showcharacter(currentCharacter) {
+			jg.frame.html("<div class='row mb-2'>	<div class='col-12 col-lg-4'><img id='img-character' src='" + currentCharacter.imageLocation +  "' alt='" + currentCharacter.name + "'></div><div class='col-12 col-lg-8 text-center text-lg-left'><h1>" + currentCharacter.name + "</h1><p>" + currentCharacter.description + "</p></div></div>"+"<div class='row btn-row'><div class='col-4 col-lg-4'><div id='btn-reset' class='btn'>Herstart</div></div> <div class='col-4 col-lg-4'><a id='btn-all' class='btn' href='personages.html'>Alle personages</a></div> <div class='col-4 col-lg-4'><a href='https://www.hopper.be/nl/" + currentCharacter.hopperID + "' target='_blank' id='btn-buy' class='btn'>Koop de badge</div></div> </div>")
+
+			// bind events on reset button
+			$( "#btn-reset" ).bind( "click", function(){
+				renderWelkom();
+			});
+		}
+
+
+		function renderProgressBar(currentQuestion){
+			var progresBar = jg.generateProgressArray(currentQuestion.id);
+			var html = '<div id="progress-bar">';
+			for (var i = 0, len = progresBar.length; i < len; i++) {
+				html += '<img src="./assets/images/progress/' + progresBar[i]+ '.svg" class="progress-bar-item">';
+			}
+			html += "</div>"; 
+			return html;
+		}
+		
+		/*
+		* Logic
+		* -----------------------
+		*/
+
+		// init base data
+		var dataLayer = new DataInterprenter("data/data.json");
+		dataLayer.loadData();
+		var jg = new JungleGame($( "#card-content" ), dataLayer.parseQuestions(), dataLayer.parseCharacters("assets/images/characters/"));
+		// render html
+		renderWelkom();	
+
+
+	</script>
+</body>
+</html>

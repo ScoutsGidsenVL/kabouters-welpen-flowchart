@@ -1,0 +1,111 @@
+body{
+	overflow: visible;
+}
+
+main{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.character-holder{
+	
+	#img-character{
+		max-width: 150px;
+		padding-bottom: 30px;
+		margin-top: 0;
+	}
+	
+	padding: 1.5rem;
+	
+	
+	background-size: 100% 100%;
+	background-position: center; 
+	background-repeat: no-repeat;
+	
+	background-image: url("../images/style/card-mob.svg");
+	
+	
+}
+
+
+.character{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+
+b{
+	color: #8e211a;
+}
+
+#characters-holder{
+	//margin-top: 50px;
+	.characters-holder{
+		
+		.character{
+			padding: 15px;
+			.personage-card{
+				padding: 25px;
+				background-image: url("../images/style/card-personages.svg");
+				background-size: 100% 100%;
+				background-position: center; 
+				background-repeat: no-repeat;
+				
+				
+				
+				img{
+					width: 90%;
+				}
+				
+				h3{
+					margin-top: 15px;
+					margin-bottom: 5px;
+				}
+			}
+			
+		}	
+	}
+	
+	.detail{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		.personage-card{
+			background-image: url("../images/style/card-personages-mob.svg") !important;	
+		}
+	}
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	main{
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+	
+	
+	.character-holder{
+	
+		#img-character{
+			max-width: 250px;
+			padding-bottom: 25px;
+		}
+
+		padding-top: 5rem !important;
+		padding-bottom: 5rem !important;
+		background-size: 100% 100%;
+		width: 80%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+
+		background-image: url("../images/style/card.svg");
+
+
+	}
+	
+	.detail{
+		.personage-card{
+			background-image: url("../images/style/card-personages.svg") !important;	
+		}
+	}
+}
