@@ -1,0 +1,6 @@
+/bower_components/
+/node_modules/
+/vendor/
+/tests/vendor/
+/module/nbproject/private/
+.DS_Store
