@@ -65,7 +65,7 @@ class JungleGame {
 
     	var prgrsArr = [];
         for (var i = 1; i <= countMaxQuestions; i++) {
-            if ( i <= currentQuestionPosition ) {
+            if ( i <= currentQuestionPosition - 1 ) {
                 if ((i % 3) == 1 ) {
                     prgrsArr.push("bamboo1_active");
                 }

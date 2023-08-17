@@ -68,8 +68,27 @@
 		function showQuestion(currentQuestion) {
 			jg.frame.html("<h1 id='question'>" + currentQuestion.description + "</h1><div id='btn-yes' class='btn'>Ja</div><div id='btn-no' class='btn'>Nee</div>" + renderProgressBar(currentQuestion) + "<div id='btn-reset' class='btn'>Herstart</div>");
 
+            
+            $('body').keypress(function (e) {
+                console.log (e.which);
+                //YES J-key or Y-Key (upper and lower)
+                if (e.which == 89 || e.which == 121 || e.which == 74 || e.which == 106){
+                    $( "#btn-yes" ).click();
+                }
+                //NO N-key (upper and lower)
+                else if (e.which == 78 || e.which == 110){
+                    $( "#btn-no" ).click();
+                }
+                //reset 
+                else if (e.which == 82 || e.which == 114){
+                    $( "#btn-reset" ).click();
+                }
+            });   
+            
+            
 			// bind events on buttons
 			$( "#btn-yes" ).bind( "click", function(){
+                $('body').unbind("keypress");
 				if (currentQuestion.nextYesQuestionID != undefined){
 					showQuestion(jg.questions.get(currentQuestion.nextYesQuestionID));
 				}
@@ -79,6 +98,7 @@
 			});
 
 			$( "#btn-no" ).bind( "click", function(){
+                $('body').unbind("keypress");
 				if (currentQuestion.nextNoQuestionID != undefined){
 					showQuestion(jg.questions.get(currentQuestion.nextNoQuestionID));
 				}
@@ -89,17 +109,29 @@
 			});
 
 			$( "#btn-reset" ).bind( "click", function(){
+                $('body').unbind("keypress");
 				renderWelkom();
+                
 			});
 		}
 
 		function showcharacter(currentCharacter) {
 			jg.frame.html("<div class='row mb-2'>	<div class='col-12 col-lg-4'><img id='img-character' src='" + currentCharacter.imageLocation +  "' alt='" + currentCharacter.name + "'></div><div class='col-12 col-lg-8 text-center text-lg-left'><h1>" + currentCharacter.name + "</h1><p>" + currentCharacter.description + "</p></div></div>"+"<div class='row btn-row'><div class='col-4 col-lg-4'><div id='btn-reset' class='btn'>Herstart</div></div> <div class='col-4 col-lg-4'><a id='btn-all' class='btn' href='personages.html'>Alle personages</a></div> <div class='col-4 col-lg-4'><a href='https://www.hopper.be/nl/" + currentCharacter.hopperID + "' target='_blank' id='btn-buy' class='btn'>Koop de badge</div></div> </div>")
-
+            
+            $('body').keypress(function (e) {
+                console.log (e.which);
+                //Reset J-key or Y-Key (upper and lower) 
+                if (e.which == 82 || e.which == 114){
+                    $( "#btn-reset" ).click();
+                }
+            });   
+            
 			// bind events on reset button
 			$( "#btn-reset" ).bind( "click", function(){
 				renderWelkom();
 			});
+            
+            
 		}
 
 
